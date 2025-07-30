@@ -1,13 +1,14 @@
-📡 **ArrayPilot: Interactive Antenna Array Generator for HFSS**
+# 📡 **ArrayPilot: Interactive Antenna Array Generator for HFSS**
+
+## Overview
 
 ArrayPilot is an interactive Python tool for generating 2D antenna array geometries of various shapes — rectangular, circular, hexagonal, octagonal, and sunflower — with optional randomization and passive cell definition. It's designed for rapid prototyping and automation of array structures to be imported into ANSYS HFSS.
 
 Built with PyQt5, the tool provides an intuitive GUI for previewing and exporting parametric array definitions.
 
-______________________________________________________________________________________________________________
+---
 
-
-🚀 **Features**
+## 🚀 Features
 
 ✅ GUI-based configuration using PyQt5
 
@@ -33,17 +34,15 @@ ________________________________________________________________________________
 
 🧠 Built-in logic to support passive elements and sparse arrays
 
-______________________________________________________________________________________________________________
+---
 
-
-🖼️ **Preview**
+## 🖼️ Preview
 
 ![ArrayPilot_UI](https://github.com/user-attachments/assets/e854a99e-f414-4add-9749-7ab50c95a12e)
 
-______________________________________________________________________________________________________________
+---
 
-
-🛠️ **Installation**
+## 🛠️ Installation
 
 1) Clone the repository:
 
@@ -55,9 +54,9 @@ ________________________________________________________________________________
 
   - pip install PyQt5 numpy
 
-______________________________________________________________________________________________________________
+---
 
-▶️ **Usage**
+## ▶️ Usage
 
 - Run the script
   
@@ -73,9 +72,9 @@ ________________________________________________________________________________
 
 - Click "Generate Array" to export settings or integrate with HFSS scripting
 
-______________________________________________________________________________________________________________
+---
 
-📂 **Output**
+## 📂 Output
 
 Console output includes:
 
@@ -91,9 +90,9 @@ You can easily extend the generate_array() method to:
 
   - Trigger HFSS scripting via pyAEDT or custom macros
 
-______________________________________________________________________________________________________________
+---
 
-⚙️ **Array Encoding Convention**
+## ⚙️ Array Encoding Convention
 
 | Value | Meaning                      |
 | ----- | ---------------------------- |
@@ -101,9 +100,9 @@ ________________________________________________________________________________
 | `0`   | Passive (non-driven) element |
 | `NaN` | Empty (air) region           |
 
-______________________________________________________________________________________________________________
+---
 
-🧠 **Future Work**
+## 🧠 Future Work
 
   - 💾 Export array to CSV/JSON
 
@@ -111,13 +110,12 @@ ________________________________________________________________________________
 
   - 💡 Advanced spacing and phase control (for beamforming)
 
-______________________________________________________________________________________________________________
+---
 
-📄 **License**
+📄 License
 
 MIT License — free to use, modify, and share.
 
-______________________________________________________________________________________________________________
-
+---
 
 
