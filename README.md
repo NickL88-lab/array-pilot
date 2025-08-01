@@ -1,4 +1,4 @@
-# 📡 **ArrayPilot: Interactive Antenna Array Generator for HFSS**
+# **ArrayPilot: Interactive Antenna Array Generator for HFSS**
 
 ## Overview
 
@@ -6,75 +6,40 @@ ArrayPilot is an interactive Python tool for generating 2D antenna array geometr
 
 Built with PyQt5, the tool provides an intuitive GUI for previewing and exporting parametric array definitions.
 
----
 
-## 🚀 Features
-
-✅ GUI-based configuration using PyQt5
-
-🔲 Generate arrays in:
-
-  - Rectangular
-
-  - Circular
-
-  - Hexagonal
-
-  - Octagonal
-
-  - Sunflower (Fermat’s spiral)
-
-🎯 Optional random air gaps or passive cells
-
-🔧 AEDT version and non-graphical mode selection
-
-📁 Selection of .a3dcomp 3D Component files
-
-🔎 Live preview of the generated array
-
-🧠 Built-in logic to support passive elements and sparse arrays
+![sparse_array](https://github.com/user-attachments/assets/2d2607cc-f5d9-4350-a23a-b59d5375d1aa)
 
 ---
 
-## 🖼️ Preview
+## Installation
 
-![ArrayPilot_UI](https://github.com/user-attachments/assets/e854a99e-f414-4add-9749-7ab50c95a12e)
+Clone the repository and install dependencies:
 
----
+```bash
+git clone https://github.com/NickL88-lab/array-pilot.git
 
-## 🛠️ Installation
+cd array-pilot
 
-1) Clone the repository:
-
-  - git clone https://github.com/NickL88-lab/array-pilot.git
-
-  - cd array-pilot
-
-2) Install dependencies:
-
-  - pip install PyQt5 numpy
+pip install PyQt5 numpy
+```
 
 ---
 
-## ▶️ Usage
+## Usage
 
 - Run the script
+
+- Select your .a3dcomp source file 
   
-- Choose the array type
+- Choose the array type: supported types are Rectangular, Circular, Hexagonal, Octagonal and Sunflower (Fermat's Spiral)
 
 - Set dimensions and parameters
 
-- Toggle randomization and passive elements if needed
+- Toggle randomization and passive elements if needed. Built-in logic to support passive elements (useful to test elements failures) and sparse arrays
 
-- Select your .a3dcomp file
-
-- Preview the geometry
+- Live preview of the genrerated array
 
 - Click "Generate Array" to export settings or integrate with HFSS scripting
-
----
-
-## 📂 Output
 
 Console output includes:
 
@@ -92,7 +57,7 @@ You can easily extend the generate_array() method to:
 
 ---
 
-## ⚙️ Array Encoding Convention
+## Array Encoding Convention
 
 | Value | Meaning                      |
 | ----- | ---------------------------- |
@@ -102,17 +67,7 @@ You can easily extend the generate_array() method to:
 
 ---
 
-## 🧠 Future Work
-
-  - 💾 Export array to CSV/JSON
-
-  - 🌐 Web version (PySide + Qt for WebAssembly)
-
-  - 💡 Advanced spacing and phase control (for beamforming)
-
----
-
-📄 License
+## License
 
 MIT License — free to use, modify, and share.
 
